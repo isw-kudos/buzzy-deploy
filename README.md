@@ -1,13 +1,6 @@
 # Buzzy for Connections On-Prem Help Guide
 Basic instructions for deploying buzzy into IBM Spectrum for on-premise IBM Connections environments
-
-
-### ISW PROD Spectrum CFC Console login details
-console: [URL](https://192.168.12.34:8443)  
-username: admin   
-password: g...4...   
-
-
+ 
 ### Pre-Requisites
 1. IBM Spectrum CFC is installed and running
 2. WebSphere environment with Web Server
@@ -142,6 +135,15 @@ ie `buzzy.isw.net.au`
 	NewsWidgetCatalogService.clearWidgetCaches()
 	```
 
+10. Setup SSO	
+
+	• Login with email address - eg as Admin
+	• Create a new team - eg Org Name (Hamburger -> Billing & Teams -> New Team) - choose a really short team name as users will need to type this in and it's case sensitive.
+	• Go to Team -> Settings -> Add Provider -> IBM Connections On Premise
+	• Fill out provider settings for the On Premise server
+	• Restart the Buzzy server
+	• Login with Connections On Prem button and type the team name in.
+	
 ### Notes on IBM Spectrum CFC Naming
 - Application (aka Deployments)
 - PetSet (aka Replica sets)
