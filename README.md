@@ -136,6 +136,7 @@ ie `buzzy.isw.net.au`
 	```
 
 10. Setup SSO	
+
 * Login with email address - eg as Admin  
 * Create a new team - eg Org Name (Hamburger -> Billing & Teams -> New Team) - choose a really short team name as users will need to type this in and it's case sensitive.  
 * Go to Team -> Settings -> Add Provider -> IBM Connections On Premise  
