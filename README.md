@@ -95,10 +95,10 @@ ie `buzzy.isw.net.au`
 	Access Homepage->Administrator
 
 	Select the following:
-		* Open Social Gadget
-		* Trusted and Use SSO
-		* Show for Activity Stream events
-		* All servers
+* Open Social Gadget  
+* Trusted and Use SSO  
+* Show for Activity Stream events  
+* All servers  
 	Click the Add Mapping button.
 
 	Add a Mapping for the Buzzy service to the Kudos client. Ensure OAuth Client is set to conn-ee and the Service name is Buzzy.
@@ -114,14 +114,14 @@ ie `buzzy.isw.net.au`
 			http://<BUZZY_URL>/assets/ico/favicon-32x32.png
 			https://<BUZZY_URL>/assets/ico/favicon-32x32.png
 	Select:
-		* Use IBM Connections specific tags
-		* Opened by default
+* Use IBM Connections specific tags  
+* Opened by default  
 
 	Select the following Prerequisites:
-		* oauthprovider
-		* webresources
-		* oauth
-		* opensocial
+* oauthprovider  
+* webresources  
+* oauth  
+* opensocial  
 	Scroll down and Click Save		
 		
 9. Register Widgets (IBM Connections 6.0 CR1 onwards)
@@ -136,12 +136,12 @@ ie `buzzy.isw.net.au`
 	```
 
 10. Setup SSO	
-		* Login with email address - eg as Admin
-		* Create a new team - eg Org Name (Hamburger -> Billing & Teams -> New Team) - choose a really short team name as users will need to type this in and it's case sensitive.
-		* Go to Team -> Settings -> Add Provider -> IBM Connections On Premise
-		* Fill out provider settings for the On Premise server
-		* Restart the Buzzy server
-		* Login with Connections On Prem button and type the team name in.
+* Login with email address - eg as Admin  
+* Create a new team - eg Org Name (Hamburger -> Billing & Teams -> New Team) - choose a really short team name as users will need to type this in and it's case sensitive.  
+* Go to Team -> Settings -> Add Provider -> IBM Connections On Premise  
+* Fill out provider settings for the On Premise server  
+* Restart the Buzzy server  
+* Login with Connections On Prem button and type the team name in.  
 	
 ### Notes on IBM Spectrum CFC Naming
 - Application (aka Deployments)
