@@ -137,12 +137,12 @@ ie `buzzy.isw.net.au`
 
 10. Setup SSO	
 
-	• Login with email address - eg as Admin
-	• Create a new team - eg Org Name (Hamburger -> Billing & Teams -> New Team) - choose a really short team name as users will need to type this in and it's case sensitive.
-	• Go to Team -> Settings -> Add Provider -> IBM Connections On Premise
-	• Fill out provider settings for the On Premise server
-	• Restart the Buzzy server
-	• Login with Connections On Prem button and type the team name in.
+		• Login with email address - eg as Admin
+		• Create a new team - eg Org Name (Hamburger -> Billing & Teams -> New Team) - choose a really short team name as users will need to type this in and it's case sensitive.
+		• Go to Team -> Settings -> Add Provider -> IBM Connections On Premise
+		• Fill out provider settings for the On Premise server
+		• Restart the Buzzy server
+		• Login with Connections On Prem button and type the team name in.
 	
 ### Notes on IBM Spectrum CFC Naming
 - Application (aka Deployments)
