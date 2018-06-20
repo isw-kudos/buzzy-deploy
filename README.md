@@ -27,6 +27,7 @@ Basic instructions for deploying buzzy into IBM Spectrum for on-premise IBM Conn
 * 56: Enter your mongoDB debug credentials  
 * 58: Enter your SMTP details  
 * 68-74: Your individual AWS details for file storage  
+* 103: Enter Admin user ids
 * 179: More AWS details for files  
 * 301: Under Buzzy Custom are lots of settings to change to make Buzzy your own  
   * 302: Company Name  
