@@ -136,7 +136,16 @@ ie `buzzy.isw.net.au`
 	NewsWidgetCatalogService.clearWidgetCaches()
 	```
 
-10. Setup SSO	
+10.	Register OAuth
+
+	```
+	execfile('oauthAdmin.py')
+	OAuthApplicationRegistrationService.addApplication('buzzyop', 'BuzzyOP', '<URL>')
+	```
+
+	That will return with both a clientsecret and clientid that you need to input in the provider settings in Step 11.
+	
+11. Setup SSO	
 
 * Login with email address - eg as Admin  
 * Create a new team - eg Org Name (Hamburger -> Billing & Teams -> New Team) - choose a really short team name as users will need to type this in and it's case sensitive.  
