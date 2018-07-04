@@ -143,6 +143,7 @@ ie `buzzy.isw.net.au`
 	OAuthApplicationRegistrationService.addApplication('buzzyop', 'BuzzyOP', '<URL>')
 	```
 
+	<URL> should be your <Buzzy URL>/pre-oauth-connections/buzzyop
 	That will return with both a clientsecret and clientid that you need to input in the provider settings in Step 11.
 	
 11. Setup SSO	
