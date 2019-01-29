@@ -58,6 +58,7 @@ spec:
               value: "smtp://someuser:somepassword@smtp.sendgrid.net:587"
             - name: METEOR_SETTINGS
               value: '{
+                "REPORT_ABUSE_EMAILS": ["support@buzzy.buzz"],
                 "BUZZY_MOBILE_CONFIG": {
                     "id": "com.<somedomain>.<some sub domain - eg app>",
                     "name": "<App Name>",
@@ -71,12 +72,34 @@ spec:
               		"accessKeyId": "",
               		"secretAccessKey": "",
               		"BUCKET_NAME": "",
+                    "PUBLIC_BUCKET_NAME": "",
               		"S3_REGION": ""
               	},
+                "FIREBASE":{
+            		"webApiKey":"AIzaSyCC-Z8mnCi4BGvj9rnU5WmgWZQLJcpygwY",
+            		"dynamicLinkDomain":"buzzy.page.link",
+            		"androidPackageName":"buzz.buzzy.app",
+            		"iosBundleId":"buzz.buzzy.app",
+            		"iosAppStoreId": "",
+            		"databaseURL":"https://folkloric-alpha-747.firebaseio.com",
+            		"serviceAccount":{
+            			  "type": "service_account",
+            			  "project_id": "folkloric-alpha-747",
+            			  "private_key_id": "b288eb8fbf8d84ad85ff68795bbc4e96c1d76b6f",
+            			  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDbYXhRyRBrwuaV\nOyYsl6PAJaoR9UTf2BLEUi+0+L6nuZUnU+aH4jSTTGCIpGsnPJo+CrVD/FBphTMb\ncnCcIp+QoeaT+4AAlUs5Ein3EDg5KpZkp5EwLEi2vObyYbhsVqruTEjgvNKHQKqP\nfOm+VItxV8EaEtnjxFqCaS54B4uaSiKl1O9SMlpl83Ncha7YaORJjK9yKAaq2EaO\nrPbRnRddAT88oEmd7gXZ7yr0EhdnCP/yrdtd7XETtgTwTEHWp+Wgbr5aIuiBIUBg\n5logG6szQjlTNLmkrEz+/hwgwxZxs1UHTGigY+5laMVjmgXeCC2R5K/nuzKNA5ox\nIj2QeMWHAgMBAAECggEAQjowEPySZP2/D3D+Srryd7jHGUnCY5L+w16OQWNQZyDq\nyqcU8pOSzJ7ji4ybPoqYg79GzoHWoqxP6+rF3RTEt+xwR99GWqa3QUDfA1NVrchS\nA4vklDbiMqxfSe+/NZGKY4sK+zF1mtgmRU/v3oH2YJ6d0Gm9dnmZ20G2ggzBE6/b\noD/Jdc2WAEPA/ZnZyqLwLnXGr07ALFeYk3rvNl6diN23CouTSoifHrKDGG6yhz8E\n+/hqThUKKF0Jl9x8PNNdeSfUdHsFl5kVEUxHDvC2dbsC0K4xhc7d2mIvMZMoWXoH\nohWInaRMnrJ+1S9EZOhfX/sooloOeU9/YnVWdu22XQKBgQDw2jvD2ArjzRazvnLx\n7YJ/iT2VxS0uqmrMeoD7yxMUgBc9C2oxjSCN8UXk84+EhY4qMa9Fqj4iNLsLcCgm\naS+oCjQ/OGH0rgHhmJTvM3uh9760C/QHThxrAjI6PtPNpi2BKpt2wcCH6Pc7CWu1\nhGYCiU4Z/mRiDyhnHZ19x1R6kwKBgQDpLYm2Aw16GwrjHmBHYeuXUd124+VGJA2I\nOHkkbym8lSy5tWzAkwatlXp7D5FYOHvfpW2nOM69xqvP0Uh8K/FwtdDxHHfgSNzQ\nblU0Td/UJjPxTPV6Jg9fcDwoHvCFY3p6cVZNM0hZRL6JPLXIOaMl2MOA2JExYJTH\n2QrcXY39vQKBgQDmvv2RFHLiagL881HmS7jBfPdefIhb8/LbseXO1XCTLGCXIE99\n54ov0t42ic2OlfFspSsZYA+k78XfIHWmzxFUOWpyww69vtOYkXjmbfldZB/1GJqT\nQRdiwbjjKnv6wuFHpU1KCjftPZlWmyDwx0Z/2ZHUv27mr0Ty/WF8NjLONwKBgQCj\nzR+OQrq26kRNo8sSmhD7rcCbgiBPk4gGB1XiaEyzcz+F/ZK1/RKV4gm2ZQs/I/6w\n7u8Gp3tkCSosxOHciKoE+VQb7Fmxrr2flcI5CfOQfn3CpsNS2WW3L4qyzHk92tHx\nLajodnv+abJHieRREVwwfANqgbgNLcGWWjus7fOPKQKBgQDny+KdWhsYO3rS2oXC\nPBhnNeS2YkFNbjwoj8WVTcum6jD50xL8gilyGsCzgxn3rcsU8uFgKpk3tIj6QyH/\nDuDVDkILUXg12U827e1Nxqrj1yK9Zq3t1lCiE4CJkhAITM/K0FR2mIcrew+u20Ug\nel/ydcJQUUWYqsK5tKUZ4BoPAA==\n-----END PRIVATE KEY-----\n",
+            			  "client_email": "firebase-adminsdk-8dfrx@folkloric-alpha-747.iam.gserviceaccount.com",
+            			  "client_id": "107958696482955851234",
+            			  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            			  "token_uri": "https://accounts.google.com/o/oauth2/token",
+            			  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            			  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-8dfrx%40folkloric-alpha-747.iam.gserviceaccount.com"
+            		}
+            	},
                 "PUSH_SETTINGS": {
+                    "enabled":false,
                     "apn": {
-            			"certDataFileName":"prod_cert_28dec2017.pem",
-            			"keyDataFileName":"prod_key_28dec2017.pem",
+            			"certDataFileName":"prod_cert.pem",
+            			"keyDataFileName":"prod_key.pem",
                      	"passphrase": "some-passphrase",
                         "production": true
 
@@ -104,6 +127,7 @@ spec:
               	"BUZZY_WATSON_USERID": "",
               	"BUZZY_LOGGING_TOKEN": "somelongtoken",
               	"BUZZY_ADMIN_TOKEN": "somelongtoken",
+                "BUZZY_JSON_WEB_TOKE_SECRET": "somelongtoken",
               	"BUZZY_DEBUG": true,
               	"BUZZY_BASIC_BUZZ_ID": "setthisup",
               	"BUZZY_WELCOME_BUZZ_ID": "setthisup",
@@ -116,6 +140,22 @@ spec:
               		"UNPAID_AUTHOR_LIST": ""
 
               	},
+                "BUZZY_CREATE_DEFAULT_ACCOUNTS": {
+                    "enabled": false,
+                    "accounts": [{
+                            "email": "someone@test.com",
+                            "password": "somepassword"
+                        },
+                        {
+                            "email": "someone1@test.com",
+                            "password": "somepassword"
+                        },
+                        {
+                            "email": "someone2@test.com",
+                            "password": "somepassword"
+                        }
+                    ]
+                },
                 "BUZZY_BASIC_BUZZ_ID": "<buzz id of basic buzz>",
                 "BUZZY_WELCOME_BUZZ_ID": "<buzz id of Welcome Buzz>",
 
@@ -174,13 +214,24 @@ spec:
 
               	},
               	"public":
+                    "LICENSE_URL": "/assets/license.html",
                     "EMBEDLEY":"891b25c24ede41cf8ee5a4f0802a3cff",
+                    "SUPRESS_NEW_USER_INVITES": false,
+        "           "LEAN_EMAIL_NOTIFICATIONS": true,
                     "S3FileExpiry": 6.048e+8,
+                    "BUZZY_CHAT_BUZZ_ID": "idofgenericchatbuzz",
+                    "PUSH_SETTINGS":{
+                        "cordovaEnabled": true,
+                        "firebaseEnabled": true
+
+                    },
               		"AWS_BUZZY_FILES": {
               			"enabled":false,
               			"S3FileExpiry": 604800,
-              			"BUCKET_NAME": "bucket name on AWS S3 or other on prem S3 server"
+              			"BUCKET_NAME": "bucket name on AWS S3 or other on prem S3 server",
+                        "URL_PATTERN": "s3.amazonaws.com"
               		},
+                    "SUPERHERO_BUZZ_ID": "somebuzzid",
               		"CLOUD_IMAGE": {
               			"enabled": false,
               			"token": "for faster/compressed images see cloudimg.io",
@@ -252,6 +303,13 @@ spec:
               		},
 
               		"LOGINS": {
+                        "SELF_REGISTRATION": {
+                            "enabled": true
+                        },
+                        "REQUEST_REGISTRATION": {
+                            "enabled": false,
+                            "regoResourceID": ""
+                        },
                         "APPSTORE": {
                             "enabled": false
                         },
@@ -265,11 +323,15 @@ spec:
               				"enabled": true
               			},
               			"GOOGLE": {
-              				"enabled": true
+              				"enabled": false
 
               			},
               			"MICROSOFT": {
-              				"enabled": false
+              				"enabled": false,
+                            "clientId": "msftclientid",
+                            "secret": "msftsecret",
+                            "scope": "User.Read",
+                            "display": "popup"
 
               			},
               			"IBM_CONNECTIONS_CLOUD": {
@@ -347,6 +409,7 @@ spec:
               			"pickPolicy": "will become obsolete"
               		},
               		"BUZZY_LOGGING_SERVER": "<Buzzy logging server url>",
+                    "BUZZY_TEMPLATE_SERVER": "https://a.buzzy.buzz",
               		"stripe": {
               			"enabled": false,
               			"debug": true,
@@ -358,10 +421,11 @@ spec:
               			"currencies":["afa","all","dzd","usd","eur","aoa","xcd","nok","ara","amd","awg","aud","azm","bsd","bhd","bdt","bbd","byr","bzd","xaf","bmd","btn","bob","bam","bwp","brl","gbp","bnd","bgn","bif","khr","cad","cve","kyd","clf","cny","cop","kmf","cdz","nzd","crc","hrk","cup","czk","dkk","djf","dop","tpe","egp","ern","eek","etb","fkp","fjd","xpf","gmd","gel","ghc","gip","gtq","gns","gwp","gyd","htg","hnl","hkd","huf","isk","inr","idr","irr","iqd","ils","jmd","jpy","jod","kzt","kes","kpw","krw","kwd","kgs","lak","lvl","lbp","lsl","lrd","lyd","chf","ltl","mop","mkd","mgf","mwk","myr","mvr","mro","mur","mxn","mdl","mnt","mad","mzm","mmk","nad","npr","ang","nic","xof","ngn","omr","pkr","pab","pgk","pyg","pei","php","pln","qar","rol","rub","rwf","wst","std","sar","scr","sll","sgd","sbd","sos","zar","lkr","shp","sdg","srg","szl","sek","syp","twd","tjr","tzs","thb","top","ttd","tnd","try","tmm","ugs","uah","sur","aed","uyu","uzs","vuv","vef","vnd","zmk"]
               		},
                     "USER_ONBOARDING":{
-            			"tagsEnabled":true
+            			"tagsEnabled": false,
+                        "tourEnabled": false
             		},
             		"USER_TAGS":{
-            			"enabled":true,
+            			"enabled":false,
             			"usersCanSelect":["interests"],
             			"list":[
 
