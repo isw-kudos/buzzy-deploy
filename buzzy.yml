@@ -58,6 +58,8 @@ spec:
               value: "smtp://someuser:somepassword@smtp.sendgrid.net:587"
             - name: METEOR_SETTINGS
               value: '{
+                "loginExpirationInDays": 365,
+                "jwtSecret": "change-to-some-very-long-secret-string",
                 "REPORT_ABUSE_EMAILS": ["support@buzzy.buzz"],
                 "BUZZY_MOBILE_CONFIG": {
                     "id": "com.<somedomain>.<some sub domain - eg app>",
@@ -68,7 +70,6 @@ spec:
                 },
               	"AWS_BUZZY_FILES": {
               		"enabled": false,
-
               		"accessKeyId": "",
               		"secretAccessKey": "",
               		"BUCKET_NAME": "",
@@ -76,6 +77,7 @@ spec:
               		"S3_REGION": ""
               	},
                 "FIREBASE":{
+                "enabled":true,
             		"webApiKey":"firebaseapikey",
             		"dynamicLinkDomain":"buzzy.page.link",
             		"androidPackageName":"buzz.buzzy.app",
@@ -128,7 +130,7 @@ spec:
               	"BUZZY_LOGGING_TOKEN": "somelongtoken",
               	"BUZZY_ADMIN_TOKEN": "somelongtoken",
                 "BUZZY_JSON_WEB_TOKE_SECRET": "somelongtoken",
-              	"BUZZY_DEBUG": true,
+              	"BUZZY_DEBUG": false,
               	"BUZZY_BASIC_BUZZ_ID": "setthisup",
               	"BUZZY_WELCOME_BUZZ_ID": "setthisup",
               	"CAMPAIGN_MONITOR": {
@@ -221,10 +223,13 @@ spec:
                     "S3FileExpiry": 6.048e+8,
                     "BUZZY_CHAT_BUZZ_ID": "idofgenericchatbuzz",
                     "PUSH_SETTINGS":{
-                        "cordovaEnabled": true,
-                        "firebaseEnabled": true
+                        "cordovaEnabled": false,
+                        "firebaseEnabled": false
 
                     },
+                      "SMS": {
+                        "enabled": false
+                        },
               		"AWS_BUZZY_FILES": {
               			"enabled":false,
               			"S3FileExpiry": 604800,
