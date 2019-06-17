@@ -99,9 +99,6 @@
           }
       ]
   },
-  "BUZZY_BASIC_BUZZ_ID": "<buzz id of basic buzz>",
-  "BUZZY_WELCOME_BUZZ_ID": "<buzz id of Welcome Buzz>",
-
   "MAIL_INCOMING_DOMAIN": "needed if reply to comments via email are needed",
   "MAILGUN_KEY": "mailgun key for incoming MAIL_INCOMING_DOMAIN",
   "LOGINS": {
