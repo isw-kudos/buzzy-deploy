@@ -126,6 +126,20 @@ spec:
                 "MAIL_URL": "<as above SMTP user+parssowrd+smtpurl>",
                 "BUZZY_TESTING": false,
                 "BUZZY_ADMIN_EMAIL": "someadminemail",
+                "DEFAULT_OAUTH_PROVIDERS": {
+                  "defaultOrganizationName": "SomeOrganizationName",
+                  "providers": [
+                    {
+                      "clientID": "someClientID",
+                      "clientSecret": "someSecret",
+                      "connectionsOrgID": "someConnectionsOrgID",
+                      "name": "thiswillbeyourteamname",
+
+                      "signInDomain": "https://somedomain",
+                      "type": "ibmconnectionscloud"
+                    }
+                  ]
+                },
                 "BUZZY_ADMIN_IDS": ["LIST ADMIN useridwillgohere once they are setup"],
                 "BUZZY_WATSON_USERID": "",
                 "BUZZY_LOGGING_TOKEN": "somelongtoken",
