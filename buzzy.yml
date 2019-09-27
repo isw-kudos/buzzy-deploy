@@ -84,6 +84,7 @@ spec:
                   ]
                 },
                 "public": {
+                  "BUZZY_DONOTREPLY_EMAIL": "donotreply2@buzzy.buzz",
                   "AWS_BUZZY_FILES": {
                     "enabled": true,
                     "S3FileExpiry": 604800,
