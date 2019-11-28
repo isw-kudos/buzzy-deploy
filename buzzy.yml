@@ -58,6 +58,7 @@ spec:
                 "MAIL_URL": "smtp://someuser:somepassword@smtp.sendgrid.net:587",
                 "BUZZY_ADMIN_EMAIL": "someadminemail",
                 "DEFAULT_OAUTH_PROVIDERS": {
+                  "enabled": true,
                   "defaultOrganizationName": "Organisation name",
                   "providers": [
                     {
